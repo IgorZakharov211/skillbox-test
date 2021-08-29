@@ -11,7 +11,7 @@
 
 
 
-[**Ссылка на сайт**](http://zakharov-igor-mesto.surge.sh/)
+[**Ссылка на сайт**](https://igorzakharov211.github.io/skillbox-test/)
 
 ## Макет
 
