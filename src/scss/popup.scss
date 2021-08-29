@@ -1,0 +1,416 @@
+//Миксины=================================================================
+@mixin margPad(){
+  margin: 0;
+  padding: 0;
+}
+
+//Переменные==============================================================
+
+$mainColor: #3D3BFF;
+
+
+//popup===================================================================
+.popup{
+  @include margPad();
+  width: 1170px;
+
+  &__title{
+    @include margPad();
+    margin: 85px 0 67px 0;
+    font-size: 55px;
+    line-height: 32px;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  &__container{
+    @include margPad();
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+//discount=================================================================
+.discount{
+  background-color: $mainColor;
+  width: 50%;
+  display: grid;
+  min-height: 599px;
+
+  &__subtitle{
+    @include margPad();
+    font-size: 80px;
+    line-height: 80px;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: -2px;
+    text-align: center;
+    font-family: "RobotoSlab";
+
+    &_size_small{
+      font-size: 38px;
+      line-height: 50px;
+      font-weight: 300;
+      opacity: .4;
+      text-decoration: line-through;
+    }
+
+    &_size_medium{
+      font-size: 50px;
+      line-height: 66px;
+      font-weight: 300;
+    }
+  }
+
+  &__title{
+    @include margPad();
+    font-size: 23px;
+    line-height: 27px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -.5px;
+    text-align: center;
+
+    &_size_small{
+      font-size: 15px;
+      line-height: 17.58px;
+      font-weight: 400;
+      opacity: .5;
+    }
+
+    &_size_medium{
+      font-size: 20px;
+      line-height: 23.44px;
+      font-weight: 400;
+    }
+  }
+
+  &__label{
+    margin: -20px auto 0 auto;
+  }
+}
+
+//label====================================================================
+.label{
+  width: 110px;
+  height: 100px;
+  background-color: #000;
+
+  &__title{
+    @include margPad();
+    color: #fff;
+    font-size: 14px;
+    line-height: 16.41px;
+    text-align: center;
+    margin: 20px 0 7px 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  &__size{
+    @include margPad();
+    color: #fff;
+    font-size: 30px;
+    line-height: 28px;
+    letter-spacing: -.75px;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  &__subtitle{
+    @include margPad();
+    color: #fff;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: -.5px;
+    text-align: center;
+    opacity: .7;
+  }
+}
+
+.label::after{
+  content: "";
+  border: 55px solid transparent; border-top: 20px solid #000;
+  position: relative;
+  bottom: -25px;
+}
+
+
+//record===========================================================================
+.record{
+  width: 50%;
+  background-color: #fff;
+
+  &__container{
+    margin: 0 132px 0 85px;
+    width: 370px;
+  }
+
+  &__title{
+    @include margPad();
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: -.5px;
+    margin: 57px 0 24px 0; 
+    font-weight: 700;
+  }
+
+  &__list{
+    @include margPad();
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-bottom: 30px;
+  }
+
+  &__cell{
+    @include margPad();
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__info{
+    @include margPad();
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #657195;
+  }
+
+  &__number{
+    @include margPad();
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: $mainColor;
+    margin-left: 5px;
+  }
+
+  &__form{
+    @include margPad();
+    border: none;
+    margin-bottom: 47px;
+    width: 100%;
+  }
+
+  &__fieldset{
+    @include margPad();
+    width: 100%;
+    border: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__label{
+    @include margPad();
+  }
+
+  &__input{
+    @include margPad();
+    width: 100%;
+    height: 60px;
+    border: 2px solid #E6E8F0;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    font-size: 15px;
+    line-height: 28px;
+    letter-spacing: -.5px;
+    color: #657195;
+    font-weight: 400;
+  }
+
+  &__button{
+    @include margPad();
+    width: 100%;
+    height: 60px;
+    background-color: $mainColor;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    line-height: 20.5px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 33px;
+    cursor: pointer;
+  }
+
+  &__agreement{
+    @include margPad();
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__checkbox{
+    @include margPad();
+    width: 24px;
+    height: 24px;
+    border: 2px solid #E6E8F0;
+    cursor: pointer;
+  }
+
+  &__agreement-text{
+    @include margPad();
+    margin-left: 21px;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -.5px;
+    font-weight: 400;
+    color:#657195;
+  }
+
+  &__span{
+    color:$mainColor;
+    cursor: pointer;
+  }
+}
+
+@media screen and(max-width: 1200px){
+  .popup{
+    width: 710px;
+    &__container{
+      flex-direction: column;
+      min-height: 659px;
+    }
+
+    &__title{
+      margin: 70px 0 56px 0;
+      font-size: 45px;
+      line-height: 53px;
+      text-align: center;
+      font-weight: 700;
+    } 
+  }
+
+  .discount{
+    width: 100%;
+  }
+
+  .record{
+    width: 100%;
+
+    &__container{
+      margin: 0 auto 0 auto;
+      width: 466px;
+    }
+
+    &__title{
+      font-size: 38px;
+      line-height: 40px;
+      letter-spacing: -.5px;
+      margin: 57px 0 32px 0; 
+      font-weight: 700;
+      text-align: center;
+    }
+
+    &__list{
+      justify-content: space-around;
+    }
+  }
+}
+
+@media screen and(max-width: 768px){
+  .popup{
+    width: 100%;
+    &__container{
+      flex-direction: column;
+      min-height: 400px;
+    }
+
+    &__title{
+      margin: 60px 0 81px 0;
+      font-size: 38px;
+      line-height: 44px;
+      text-align: center;
+      font-weight: 700;
+    } 
+  }
+
+  .discount{
+    min-height: 400px;
+    &__label{
+      margin: -53px auto 0 auto;
+    }
+    &__subtitle{
+      font-size: 56px;
+      line-height: 73px;
+
+      &_size_small{
+        font-size: 36px;
+        line-height: 48px;
+      }
+
+      &_size_medium{
+        font-size: 40px;
+        line-height: 53px;
+      }
+    }
+
+    &__title{
+      font-size: 18px;
+      line-height: 21px;
+
+      &_size_small{
+        font-size: 15px;
+        line-height: 17.58px;
+      }
+
+      &_size_medium{
+        font-size: 15px;
+        line-height: 17.58px;
+      }
+    }
+  }  
+
+  .record{
+
+    &__container{
+      margin: 0 auto 0 auto;
+      width: 270px;
+    }
+
+    &__title{
+      font-size: 30px;
+      line-height: 36px;
+      letter-spacing: -.5px;
+      margin: 40px 0 19px 0; 
+      text-align: start;
+    }
+  
+    &__list{
+      flex-direction: column;
+    }
+  
+    &__cell{
+      @include margPad();
+      display: flex;
+      flex-direction: row;
+    }
+  
+    &__info{
+      @include margPad();
+      font-size: 14px;
+      line-height: 30px;
+      font-weight: 400;
+      color: #657195;
+    }
+  
+    &__number{
+      @include margPad();
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 700;
+      color: $mainColor;
+      margin-left: 5px;
+    }
+
+
+  }
+
+}
+
+

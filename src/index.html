@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Skillbox Test</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="popup">
+        <h1 class="popup__title">Стоимость обучения</h2>
+        <div class="popup__container">
+          <div class="discount">
+            <div class="label discount__label">
+              <h3 class="label__title">скидка</h3>
+              <p class="label__size">40%</p>
+              <p class="label__subtitle">первым 20</p>
+            </div>
+            <div class="discount__text">
+              <h2 class="discount__title discount__title_size_small">Полная стоимость курса</h4>
+              <p class="discount__subtitle discount__subtitle_size_small">50 000 &#8381; </p>
+            </div>
+            <div class="discount__text">
+              <p class="discount__subtitle">2 900 &#x20bd;</p>
+              <h2 class="discount__title">Рассрочка без первого взноса</h4>
+            </div>
+            <div class="discount__text">
+              <p class="discount__subtitle discount__subtitle_size_medium">29 000 &#8381;</p>
+              <h2 class="discount__title discount__title_size_medium">Для первых 20-ти</h4>
+            </div>
+          </div>
+          <div class="record">
+            <div class="record__container">
+              <h2 class="record__title">Запишитесь на курс</h3>
+              <ul class="record__list">
+                <li class="record__cell">
+                  <p class="record__info">Старт курса:</p>
+                  <p class="record__number"> 7 сентября</p>
+                </li>
+                <li class="record__cell">
+                  <p class="record__info">Осталось:</p>
+                  <p class="record__number"> 19 мест</p>
+                </li>
+              </ul>
+              <form class="record__form">
+                <fieldset class="record__fieldset">
+                  <label class="record__field">
+                    <input class="record__input"
+                    type="text"  
+                    placeholder="Имя"
+                    name="name"
+                    value=""
+                    required
+                    id="name-input"
+                    minlength="3"
+                    maxlength="30">
+                  </label>
+                  <label class="record__field">
+                    <input class="record__input"
+                    type="tel"  
+                    placeholder="Телефон"
+                    name="telephone"
+                    value=""
+                    required
+                    id="telephone-input"
+                    minlength="5"
+                    maxlength="30">
+                  </label>
+                  <label class="record__field">
+                    <input class="record__input"
+                    type="email"  
+                    placeholder="Email"
+                    name="email"
+                    value=""
+                    required
+                    id="email-input"
+                    minlength="3"
+                    maxlength="30">
+                  </label>
+                  <button class="record__button">ЗАПИСАТЬСЯ</button>
+                  <label class="record__agreement">
+                    <input class="record__checkbox" type="checkbox">
+                    <p class="record__agreement-text">Я согласен с условиями обработки 
+                      <span class="record__span">персональных данных</span></p>
+                  </label>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+      </div>
+      </div>
+    </main>
+    <script src="js/index.min.js"></script>
+  </body>
+</html>
